@@ -1,0 +1,14 @@
+{
+  "users" : [
+    {
+      "id": 1,
+      "name": "name",
+      "gender": "female",
+      "total-dog-like":3,
+      "dog-likes": {
+        "border-collie": 1,
+        "daschund": 2
+      }
+    }
+  ]
+}
