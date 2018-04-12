@@ -1,27 +1,34 @@
-import React, {Component} from 'react'
+import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import photos from '../reducers/index'
+import {fetchRandomPhoto} from '../actions/photos'
+import './Image.css'
+// import photos from '../reducers/index'
 
-class Image extends Component {
+class Image extends PureComponent {
   static propTypes = {
-  photos: PropTypes.shape(
-    [{
-      url: PropTypes.string,
-      breed: PropTypes.string
-    }]
-  ).isRequired
+  photos: PropTypes.string.isRequired
+}
+
+// handleBreedName() {
+//   return this.props.photos[0].breed
+//           .split('-')
+//             .reverse()
+//               .join(' ')
+// }
+componentWillMount(){
+  this.props.fetchRandomPhoto()
 }
   render(){
+    const {photos} = this.props
     return (
       <div>
-        <img src={this.props.photos[0].url} />
+        <header><em>Filler text</em></header>
+        <img src={this.props.photos} />
       </div>
     )
   }
 }
-
-
 
 const mapStateToProps = function (state) {
   return {
@@ -29,4 +36,4 @@ const mapStateToProps = function (state) {
   }
 }
 
-export default connect(mapStateToProps)(Image)
+export default connect(mapStateToProps, {fetchRandomPhoto})(Image)
