@@ -16,92 +16,76 @@ const users = [
     id: 1,
     name: "Peter",
     gender: "male",
-    dog-likes-total: 10,
-    dog-likes-breed: {
-      border-collie: 5,
-      dachshund: 2,
-      chihuahua: 2,
-      poodle: 3
-    }
+    doglikestotal: 10,
+    border_collie: 5,
+    dachshund: 2,
+    chihuahua: 2,
+    standard_poodle: 3
   },
   {
     id: 2,
     name: "Paul",
     gender: "male",
-    dog-likes-total: 9,
-    dog-likes-breed: {
-      border-collie: 1,
-      dachshund: 3,
-      poodle: 5
-    }
+    doglikestotal: 9,
+    border_collie: 1,
+    dachshund: 3,
+    standard_poodle: 5
   },
   {
     id: 3,
     name: "Susan",
     gender: "female",
-    dog-likes-total: 10,
-    dog-likes-breed: {
-      border-collie: 6,
-      keeshond: 4
-    }
+    doglikestotal: 10,
+    border_collie: 6,
+    malamute: 4
   },
   {
     id: 4,
     name: "Anna",
     gender:"female",
-    dog-likes-total: 40 ,
-    dog-likes-breed: {
-      border-collie: 10,
-      dachshund:2 ,
-      chihuahua:22 ,
-      poodle:6
-    }
+    doglikestotal: 40 ,
+    basset_hound: 10,
+    dachshund:2 ,
+    cardigan_corgi:22 ,
+    standard_poodle:6
   },
   {
     id: 5,
     name: "Joyce",
     gender:"female",
-    dog-likes-total: 30 ,
-    dog-likes-breed: {
-      border-collie: 10,
-      dachshund:2 ,
-      chihuahua:12 ,
-      poodle:6
-    }
+    doglikestotal: 30 ,
+    border_collie: 10,
+    dachshund:2 ,
+    cardigan_corgi:12 ,
+    standard_poodle:6
   },
   {
-      id: 6,
-      name: "Anna",
-      gender:"female",
-      dog-likes-total: 20 ,
-      dog-likes-breed: {
-        border-collie: 0,
-        dachshund:2 ,
-        chihuahua:12 ,
-        poodle:6
-      },
-    }
+    id: 6,
+    name: "Emma",
+    gender:"female",
+    doglikestotal: 20 ,
+    border_collie: 0,
+    dachshund:2 ,
+    chihuahua:12 ,
+    standard_poodle:6
+    },
+    {
     id: 7,
     name: "Charise",
     gender:"female",
-    dog-likes-total: 10 ,
-    dog-likes-breed: {
-      border-collie: 0,
-      dachshund:2 ,
-      chihuahua:2 ,
-      poodle:6
-    }
-  },
-}
-id: 8,
-name: "Steven",
-gender:"male",
-dog-likes-total: 20 ,
-dog-likes-breed: {
-  border-collie: 10,
-  dachshund:2 ,
-  chihuahua:2 ,
-  poodle:6
-}
-}
-]
+    doglikestotal: 10 ,
+    border_collie: 0,
+    dachshund:2 ,
+    labrador:2 ,
+    standard_poodle:6
+    },
+    {
+    id: 8,
+    name: "Steven",
+    gender:"male",
+    doglikestotal: 20 ,
+    border_collie: 10,
+    dachshund:2 ,
+    basset_hound:2 ,
+    standard_poodle:6
+  },]
