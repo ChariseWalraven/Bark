@@ -9,21 +9,27 @@ blue - #2D898B
 .App {
   text-align: center;
 }
-
-.button-container {
-      display: inline-flex;
+.image-container {
+  padding: 0.8em;
 }
-
+.title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: #E3E3E3;
+  padding: 0.5em 0;
+}
+.button-container{
+  display: inline-flex;
+}
 .dislike-button {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   background-color: #C84630;
   border-radius: 50px;
 }
-
 .like-button{
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   background-color: #2D898B;
   border-radius: 50px;
 }
