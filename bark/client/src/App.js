@@ -19,7 +19,8 @@ class App extends PureComponent {
         <Image className="Image"/>
         </div>
         <div className="button-container">
-          <DislikeButton className="Dislike-Button"/>
+          <DislikeButton
+          className="Dislike-Button"/>
           <LikeButton className="Like-Button"/>
         </div>
       </div>

@@ -2,6 +2,8 @@ import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {fetchRandomPhoto} from '../actions/photo'
+import DislikeButton from './Dislike'
+import LikeButton from './likeButton'
 import './Image.css'
 // import photos from '../reducers/index'
 
@@ -22,6 +24,7 @@ componentWillMount(){
         <header><em>{this.handleBreedName(photos.breed)}</em></header>
         <img src={photos.message} alt="dog"/>
       </div>
+
     )
   }
 }
