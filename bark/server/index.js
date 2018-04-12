@@ -17,6 +17,7 @@ app.get('/', (req, res)=> {
   request('https://dog.ceo/api/breeds/image/random', function (error, response, body) {
      // returns required JSON object!
      const message = JSON.parse(body).message
+     console.error(err)
     res.send(message)
   })
 })
