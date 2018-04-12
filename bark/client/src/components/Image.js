@@ -1,14 +1,14 @@
 import React, {PureComponent} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
-import {fetchRandomPhoto} from '../actions/photos'
+import {fetchRandomPhoto} from '../actions/photo'
 import './Image.css'
 // import photos from '../reducers/index'
 
 class Image extends PureComponent {
-  static propTypes = {
-  photos: PropTypes.string.isRequired
-}
+//   static propTypes = {
+//   photos: PropTypes.string.isRequired
+// }
 
 // handleBreedName() {
 //   return this.props.photos[0].breed
@@ -16,9 +16,9 @@ class Image extends PureComponent {
 //             .reverse()
 //               .join(' ')
 // }
-componentWillMount(){
-  this.props.fetchRandomPhoto()
-}
+// componentWillMount(){
+//   this.props.fetchRandomPhoto()
+// }
   render(){
     const {photos} = this.props
     return (

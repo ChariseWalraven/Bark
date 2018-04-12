@@ -10,6 +10,10 @@ blue - #2D898B
   text-align: center;
 }
 
+.match {
+  color: red;
+}
+
 .image-container {
   padding: 0.8em;
 }

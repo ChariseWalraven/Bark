@@ -1,13 +1,16 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types'
+
 
 class UserInfo extends PureComponent {
 
   render(){
+    const {users} = this.props
+    console.log(users[0].id)
     return(
       <div>
-      <h2>Your best match:</h2>
-      <h2>Username of best match goes here</h2>
+      <h2>Your best match: <span className="match">{users[1].name}</span></h2>
       </div>
     )
   }
@@ -15,7 +18,7 @@ class UserInfo extends PureComponent {
 
 const mapStateToProps = function (state) {
   return {
-    user: state.user
+    users: state.users
   }
 }
 
