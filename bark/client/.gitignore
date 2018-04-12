@@ -10,6 +10,7 @@
 /build
 
 # misc
+.eslintrc
 .DS_Store
 ../.DS_Store
 .env.local

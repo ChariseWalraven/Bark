@@ -16,3 +16,7 @@ blue - #2D898B
   background-color: #C84630;
   border-radius: 50px;
 }
+
+button:focus {
+    outline: none !important;
+}
