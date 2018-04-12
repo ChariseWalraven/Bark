@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DislikeButton from './components/Dislike'
+import Image from './components/Image'
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,10 @@ class App extends Component {
     return (
       <div className="App">
       <p>Hello World!</p>
-      <DislikeButton className="Dislike-Button"/>
+        <div className="image-container">
+        <Image className="Image"/>
+        <DislikeButton className="Dislike-Button"/>
+        </div>
       </div>
     );
   }

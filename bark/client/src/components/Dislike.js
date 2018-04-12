@@ -1,6 +1,6 @@
-import React, {PureComponent} from 'react'
+import React, {Component} from 'react'
 
-class Button extends PureComponent {
+class Button extends Component {
   render(){
     return (
         <button className="fa fa-thumbs-down dislike-button"></button>
