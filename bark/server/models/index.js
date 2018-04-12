@@ -14,34 +14,34 @@ const User = sequelize.define('user', {
     type: Sequelize.INTEGER,
     allowNull: false
   },
-  CHIHUAHUA: {
+  chihuahua: {
     type: Sequelize.INTEGER,
   },
-  CARDIGAN_CORGI: {
+  cardigan_corgi: {
     type: Sequelize.INTEGER,
   },
-  GERMANSHEPHERD: {
+  germanshepherd: {
     type: Sequelize.INTEGER,
   },
-  BASSET_HOUND: {
+  basset_hound: {
     type: Sequelize.INTEGER,
   },
-  LABRADOR: {
+  labrador: {
     type: Sequelize.INTEGER,
   },
-  MALAMUTE: {
+  malamute: {
     type: Sequelize.INTEGER,
   },
-  STANDARD_POODLE: {
+  standard_poodle: {
     type: Sequelize.INTEGER,
   },
-  DACHSHUND: {
+  dachshund: {
     type: Sequelize.INTEGER,
   },
-  BORDER_COLLIE: {
+  border_collie: {
     type: Sequelize.INTEGER,
   },
-  GREAT_DANE: {
+  great_dane: {
     type: Sequelize.INTEGER,
   }
   },{

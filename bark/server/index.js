@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const request = require('request');
+const User = require('./models/index')
 
 const app = express()
 app.use(bodyParser())
@@ -26,6 +27,31 @@ app.get('/', (req, res)=> {
      console.log(JSON.stringify(envelope));
 
     res.send(envelope)
+  })
+})
+
+app.put('/users/:id', (request, response) => {
+  const userId = Number(request.params.id)
+  const updates = request.body
+  console.log(updates);
+
+  User.findById(userId)
+  .then(user => {
+    user.update({doglikestotal: user.doglikestotal + 1})
+
+      .then(updatedUser => {
+        response.send(updatedUser)
+      })
+      .catch(err => {
+        response.status(404).send({
+          message: 'User not found!'
+        })
+      })
+    .catch(err => {
+      response.status(500).send({
+      message: 'something is really wrong!'
+      })
+    })
   })
 })
 

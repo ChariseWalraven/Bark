@@ -10,9 +10,9 @@ export const fetchRandomPhoto = () => (dispatch) => {
     .get(`${baseUrl}/`)
     .then(response => dispatch({
       type: FETCH_RANDOM_PHOTO,
-      payload: JSON.parse(response.text).message
+      payload: JSON.parse(response.text)
     },
-  console.log(JSON.parse(response.text).message)))
+  console.log(JSON.parse(response.text))))
     .catch(err => alert(err))
 }
 

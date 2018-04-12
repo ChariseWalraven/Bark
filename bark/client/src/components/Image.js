@@ -6,19 +6,18 @@ import './Image.css'
 // import photos from '../reducers/index'
 
 class Image extends PureComponent {
-//   static propTypes = {
-//   photos: PropTypes.string.isRequired
-// }
 
-// handleBreedName() {
-//   return this.props.photos[0].breed
-//           .split('-')
-//             .reverse()
-//               .join(' ')
-// }
-// componentWillMount(){
-//   this.props.fetchRandomPhoto()
-// }
+handleBreedName() {
+  return this.props.photos[0].breed
+          .split('-')
+            .reverse()
+              .join(' ')
+}
+
+componentWillMount(){
+  this.props.fetchRandomPhoto()
+}
+
   render(){
     const {photos} = this.props
     return (
@@ -32,7 +31,7 @@ class Image extends PureComponent {
 
 const mapStateToProps = function (state) {
   return {
-    photos: state.photos
+    photos: state.photos.message
   }
 }
 
