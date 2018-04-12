@@ -1,1 +1,5 @@
-export default {} // empty for now!
+import photos from './photos'
+
+export default {
+  photos
+}
