@@ -9,7 +9,8 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
   res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE')
   next()
-});
+})
+
 //get JSON from API and send to route
 app.get('/', (req, res)=> {
   request('https://dog.ceo/api/breeds/image/random', function (error, response, body) {

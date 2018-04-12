@@ -2,7 +2,8 @@ import React, {PureComponent} from 'react'
 
 class LikeButton extends PureComponent {
 
-LikeUpdate() {
+LikeUpdate(e) {
+  e.preventDefault();
   alert('Update Users likes')
 }
 
