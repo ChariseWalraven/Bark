@@ -6,25 +6,22 @@ import './Image.css'
 // import photos from '../reducers/index'
 
 class Image extends PureComponent {
-//   static propTypes = {
-//   photos: PropTypes.string.isRequired
-// }
 
 // handleBreedName() {
-//   return this.props.photos[0].breed
-//           .split('-')
-//             .reverse()
-//               .join(' ')
+//    photos.breed.split('-')
 // }
-// componentWillMount(){
-//   this.props.fetchRandomPhoto()
-// }
+
+componentWillMount(){
+  this.props.fetchRandomPhoto()
+}
+
   render(){
     const {photos} = this.props
+console.log(typeof photos.breed)
     return (
       <div>
-        <header><em>Filler text</em></header>
-        <img src={this.props.photos} alt="dog"/>
+        <header><em>{photos.breed}</em></header>
+        <img src={photos.message} alt="dog"/>
       </div>
     )
   }

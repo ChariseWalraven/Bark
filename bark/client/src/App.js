@@ -10,7 +10,7 @@ class App extends PureComponent {
     return (
       <div className="App">
         <header className="header">
-          <h1 className="title">Bark</h1>
+          <h1 className="title">Bark <i className="fa fa-paw"></i></h1>
         </header>
         <div className="users-container">
           <UserInfo />
