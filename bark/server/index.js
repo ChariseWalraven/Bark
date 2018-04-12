@@ -17,8 +17,15 @@ app.get('/', (req, res)=> {
      // returns required JSON object!
      const message = JSON.parse(body).message
      const breed = message.slice(58).slice(0,message.slice(58).indexOf('/'));
-     console.log(breed);
-    res.send(JSON.stringify(message, breed))
+     const envelope = {
+       message,
+       breed
+     }
+     console.log(typeof breed, breed);
+     console.log(typeof message, message)
+     console.log(JSON.stringify(envelope));
+
+    res.send(envelope)
   })
 })
 

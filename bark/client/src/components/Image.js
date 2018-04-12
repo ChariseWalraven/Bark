@@ -24,7 +24,7 @@ componentWillMount(){
     return (
       <div>
         <header><em>Filler text</em></header>
-        <img src={this.props.photos} />
+        <img src={this.props.photos} alt="dog"/>
       </div>
     )
   }
