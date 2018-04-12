@@ -1,0 +1,8 @@
+{
+  "name": "Bark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ChariseWalraven/Bark.git",
+  "author": "LevNikolayevitch <steven.vanasbeck@gmail.com>",
+  "license": "MIT"
+}
