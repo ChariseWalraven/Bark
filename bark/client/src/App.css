@@ -10,9 +10,20 @@ blue - #2D898B
   text-align: center;
 }
 
+.button-container {
+      display: inline-flex;
+}
+
 .dislike-button {
   height: 40px;
   width: 40px;
   background-color: #C84630;
+  border-radius: 50px;
+}
+
+.like-button{
+  height: 40px;
+  width: 40px;
+  background-color: #2D898B;
   border-radius: 50px;
 }
