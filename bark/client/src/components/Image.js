@@ -7,9 +7,9 @@ import './Image.css'
 
 class Image extends PureComponent {
 
-// handleBreedName() {
-//    photos.breed.split('-')
-// }
+handleBreedName(string) {
+   return string.split('-').reverse().join(' ')
+}
 
 componentWillMount(){
   this.props.fetchRandomPhoto()
@@ -17,10 +17,9 @@ componentWillMount(){
 
   render(){
     const {photos} = this.props
-console.log(typeof photos.breed)
     return (
       <div>
-        <header><em>{photos.breed}</em></header>
+        <header><em>{this.handleBreedName(photos.breed)}</em></header>
         <img src={photos.message} alt="dog"/>
       </div>
     )
