@@ -11,8 +11,9 @@ export const fetchRandomPhoto = () => (dispatch) => {
     .then(response => dispatch({
       type: FETCH_RANDOM_PHOTO,
       payload: JSON.parse(response.text)
-    },
-  console.log(JSON.parse(response.text))))
+    }))
+  // console.log(JSON.parse(response.text))))
+
     .catch(err => alert(err))
 }
 
