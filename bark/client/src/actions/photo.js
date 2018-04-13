@@ -13,6 +13,7 @@ export const fetchRandomPhoto = () => (dispatch) => {
       payload: JSON.parse(response.text)
     }))
   // console.log(JSON.parse(response.text))))
+
     .catch(err => alert(err))
 }
 

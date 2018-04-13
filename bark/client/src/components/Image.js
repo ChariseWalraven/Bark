@@ -11,6 +11,7 @@ class Image extends PureComponent {
 
 handleBreedName(string) {
    return string.split('-').reverse().join(' ')
+
 }
 
 componentWillMount(){
