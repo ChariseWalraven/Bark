@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react'
 import {connect} from 'react-redux'
-import {updateUser} from '../actions/user'
+import {updateUser, updateMatches} from '../actions/user'
 import {fetchRandomPhoto} from '../actions/photo'
 
 class LikeButton extends PureComponent {
@@ -9,6 +9,7 @@ class LikeButton extends PureComponent {
     e.preventDefault();
     this.props.updateUser(this.props.breed);
     this.props.fetchRandomPhoto()
+    this.props.updateMatches();
     // console.log(this.props.breed);
   }
 
@@ -29,4 +30,4 @@ const mapStateToProps = function (state) {
   }
 }
 
-export default connect(mapStateToProps, {updateUser, fetchRandomPhoto})(LikeButton)
+export default connect(mapStateToProps, {updateUser, updateMatches, fetchRandomPhoto})(LikeButton)
