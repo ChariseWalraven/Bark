@@ -8,16 +8,18 @@ blue - #2D898B
 
 
  @import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
 body {
   background-color: #898989;
   cursor: default;
 }
 
-p {
-  width: 100%;
-  text-align: center;
-  position: relative;
-  margin-top: 45vh;
+i {
+  cursor: pointer;
+}
+
+.breed-name {
+line-height: 4em;
 }
 
 .anim {
@@ -27,21 +29,6 @@ p {
   animation-iteration-count: infinite;
 }
 
-@keyframes jiggle {
-  48%, 62% {
-    transform: scale(1.0, 1.0)
-  }
-  50% {
-    transform: scale(1.1, 0.9)
-  }
-  56% {
-    transform: scale(0.9, 1.1) translate(0, -5px)
-  }
-  59% {
-    transform: scale(1.0, 1.0) translate(0, -3px)
-  }
-}
-
 .App {
   text-align: center;
   width: 100%;
@@ -49,15 +36,19 @@ p {
   overflow: hidden;
   padding: 0;
   display: inline-grid;
+  box-shadow: 0px 5px 5px dimgrey;
 }
 
 .match {
   color: #C84630;
   cursor: pointer;
 }
- i {
-   cursor: pointer;
- }
+
+.fa-paw {
+  transform: rotate(15deg);
+  color: #2D898B;
+}
+
 .users-container {
   position: absolute;
   margin: 0;
@@ -65,24 +56,31 @@ p {
   display: block;
   padding: 0.8em;
 }
-.image-container{
+
+.image-container {
   right: 100px;
-  top: 120px;
+  width: 500px;
+  top: 90px;
   position: absolute;
   display: block;
-  padding: 0.8em;
 }
+
 img {
-  width: inherit;
+  display: block;
+  width: 100%;
+  height: auto;
 }
+
 .title {
   margin: 0 auto;
   text-transform: uppercase;
   background-color: #E3E3E3;
   padding: 0.5em 0;
 }
-.button-container{
+
+.button-container {
   display: inline-flex;
+  padding: 0.8em;
 }
 
 .dislike-button {
@@ -93,7 +91,6 @@ img {
   display: inline-block;
   padding: 1em;
   margin-right: 100px;
-  color: #2D898B;
   text-align: center;
   cursor: pointer;
 }
@@ -104,11 +101,25 @@ img {
   border-radius: 50px;
   display: inline-block;
   padding: 1em;
-  color:  #C84630;
   margin-left: 100px;
   cursor: pointer;
 }
 
 button:focus {
     outline: none !important;
+}
+
+@keyframes jiggle {
+  48%, 62% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.05, 0.95)
+  }
+  56% {
+    transform: scale(0.95, 1.05) translate(0, -5px)
+  }
+  59% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
 }
