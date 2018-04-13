@@ -34,7 +34,6 @@ app.put('/users/:id', (request, response) => {
   const userId = Number(request.params.id)
   const updates = request.body
   console.log(updates);
-  // response.end()
 
   User.findById(userId)
   .then(user => {
@@ -57,15 +56,16 @@ app.put('/users/:id', (request, response) => {
   })
 })
 
-// app.get('/test', (req, res)=> {
-//   User.findAll({
-//     where: {
-//       border_collie: 1
-//     }
-//   }).then(user => {
-//
-//   })
-// })
+app.get('/match', (req, res)=> {
+  User.findAll({  where: {
+    id: { $ne: 1},
+    doglikestotal: { $between: [6, 30000] }
+    }
+  })
+  .then(users => {
+    res.send({users})
+  })
+})
 
 
 

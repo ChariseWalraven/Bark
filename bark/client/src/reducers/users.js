@@ -1,4 +1,4 @@
-import UPDATE_USER from '../actions/user'
+import {UPDATE_USER, UPDATE_MATCHES} from '../actions/user'
 
 const users = [{
     id: 1,
@@ -23,6 +23,11 @@ const users = [{
 
 export default function (state = users, action) {
   switch (action.type) {
+    case UPDATE_USER:
+      return action.payload
+
+    case UPDATE_MATCHES:
+      return action.payload
     default:
       return state
   }

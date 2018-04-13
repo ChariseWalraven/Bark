@@ -1,16 +1,16 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 
 class UserInfo extends PureComponent {
 
   render(){
     const {users} = this.props
-    console.log(users[0].id)
+    // console.log(users[0].id)
     return(
       <div>
-      <h2>Your best match: <span className="match">{users[1].name}</span></h2>
+      <h2>Your best match: <span className="match">{users.name}</span></h2>
       </div>
     )
   }
