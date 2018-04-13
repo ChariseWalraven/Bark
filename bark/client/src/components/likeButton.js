@@ -10,7 +10,7 @@ LikeUpdate(e) {
   render() {
     return(
       <div>
-        <button value="buttonValue" onClick={this.LikeUpdate} className="fa fa-thumbs-up like-button" ></button>
+        <button value="buttonValue" onClick={this.LikeUpdate} className="fa fa-thumbs-up like-button anim" ></button>
       </div>
     )
   }
