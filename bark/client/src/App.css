@@ -6,39 +6,120 @@ grey - #898989
 blue - #2D898B
  */
 
+
+ @import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+body {
+  background-color: #898989;
+  cursor: default;
+}
+
+i {
+  cursor: pointer;
+}
+
+.breed-name {
+line-height: 4em;
+}
+
+.anim {
+  animation-name: jiggle;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  display: inline-grid;
+  box-shadow: 0px 5px 5px dimgrey;
 }
 
 .match {
-  color: red;
+  color: #C84630;
+  cursor: pointer;
+}
+
+.fa-paw {
+  transform: rotate(15deg);
+  color: #2D898B;
+}
+
+.users-container {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  display: block;
+  padding: 0.8em;
 }
 
 .image-container {
-  padding: 0.8em;
+  right: 100px;
+  width: 500px;
+  top: 90px;
+  position: absolute;
+  display: block;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .title {
   margin: 0 auto;
   text-transform: uppercase;
   background-color: #E3E3E3;
   padding: 0.5em 0;
 }
-.button-container{
+
+.button-container {
   display: inline-flex;
+  padding: 0.8em;
 }
+
 .dislike-button {
   height: 60px;
   width: 60px;
   background-color: #C84630;
   border-radius: 50px;
+  display: inline-block;
+  padding: 1em;
+  margin-right: 100px;
+  text-align: center;
+  cursor: pointer;
 }
 .like-button{
   height: 60px;
   width: 60px;
   background-color: #2D898B;
   border-radius: 50px;
+  display: inline-block;
+  padding: 1em;
+  margin-left: 100px;
+  cursor: pointer;
 }
 
 button:focus {
     outline: none !important;
+}
+
+@keyframes jiggle {
+  48%, 62% {
+    transform: scale(1.0, 1.0)
+  }
+  50% {
+    transform: scale(1.05, 0.95)
+  }
+  56% {
+    transform: scale(0.95, 1.05) translate(0, -5px)
+  }
+  59% {
+    transform: scale(1.0, 1.0) translate(0, -3px)
+  }
 }

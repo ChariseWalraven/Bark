@@ -13,7 +13,9 @@ class LikeButton extends PureComponent {
   render() {
     return(
       <div>
-        <button value="buttonValue" onClick={this.likeUpdate} className="fa fa-thumbs-up like-button" ></button>
+      
+        <button value="buttonValue" onClick={this.LikeUpdate} className="fa fa-thumbs-up like-button anim" ></button>
+
       </div>
     )
   }

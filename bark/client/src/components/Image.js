@@ -22,7 +22,7 @@ componentWillMount(){
     const {photos} = this.props
     return (
       <div>
-        <header><em>{this.handleBreedName(photos.breed)}</em></header>
+        <header className="breed-name"><em>{this.handleBreedName(photos.breed)}</em></header>
         <img src={photos.message} alt="dog"/>
       </div>
 
