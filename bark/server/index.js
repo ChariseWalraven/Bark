@@ -34,10 +34,12 @@ app.put('/users/:id', (request, response) => {
   const userId = Number(request.params.id)
   const updates = request.body
   console.log(updates);
+  // response.end()
 
   User.findById(userId)
   .then(user => {
     user.update({doglikestotal: user.doglikestotal + 1})
+
 
       .then(updatedUser => {
         response.send(updatedUser)
@@ -54,6 +56,16 @@ app.put('/users/:id', (request, response) => {
     })
   })
 })
+
+// app.get('/test', (req, res)=> {
+//   User.findAll({
+//     where: {
+//       border_collie: 1
+//     }
+//   }).then(user => {
+//
+//   })
+// })
 
 
 
